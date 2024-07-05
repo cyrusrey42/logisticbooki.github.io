@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logistic Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+      </div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Book Now</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Reliable Logistic Services</h1>
+      <p>Book your logistics today for hassle-free delivery.</p>
+      <a href="#booking" class="btn">Get a Quote</a>
+    </section>
+
+    <section id="features">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Ground Transportation</li>
+        <li>Air Freight</li>
+        <li>Sea Freight</li>
+        <li>Warehousing</li>
+      </ul>
+    </section>
+
+    <section id="booking">
+      <h2>Book Your Logistics</h2>
+      <form id="booking-form">
+        <label for="pickup">Pickup Location:</label>
+        <input type="text" id="pickup" name="pickup" required>
+
+        <label for="delivery">Delivery Location:</label>
+        <input type="text" id="delivery" name="delivery" required>
+
+        <label for="date">Pickup Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="service">Service Type:</label>
+        <select id="service" name="service" required>
+          <option value="">Select Service</option>
+          <option value="ground">Ground Transportation</option>
+          <option value="air">Air Freight</option>
+          <option value="sea">Sea Freight</option>
+          <option value="warehouse">Warehousing</option>
+        </select>
+
+        <button type="submit" class="btn">Book Now</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Logistic Booking. All rights reserved.</p>
+  </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
